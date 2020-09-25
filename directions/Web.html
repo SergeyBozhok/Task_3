@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+   <header>
+      <div class="onlyTheName">
+         <h1>unschooler IT</h1>
+      </div>
+      
+      <nav class="secondLevel">
+         <ol class="menu-main">
+            <li><a href="/index.html" onclick="currentSlide(1)" class="scroll-to" >Направление</a></li>
+            <li><a href="#"  onclick="currentSlide(2)" class="scroll-to" >Курсы</a></li>
+            <li><a href="#"  onclick="currentSlide(3)" class="scroll-to" >Проекты</a></li>
+            <li><a href="#" onclick="currentSlide(4)" class="scroll-to">Работа</a></li>
+         </ol>
+        <br class="clear"></br>
+      </nav>
+      
+  
+  
+   <div class="slider">
+      <div class="item">
+          <div class="slideText">Заголовок слайда 1</div>
+          
+            <div id="trapezoid" class="trap"></div>
+      </div>
+  
+      <div class="item">
+          <div class="slideText">Заголовок слайда 2</div>
+      </div>
+  
+      <div class="item">
+          <div class="slideText">Заголовок слайда 3</div>
+      </div>
+
+      <div class="item">
+         <div class="slideText">Заголовок слайда 4</div>
+     </div>
+  
+      <a class="prev" onclick="minusSlide()">&#10094;</a>
+      <a class="next" onclick="plusSlide()">&#10095;</a>
+  </div>
+  
+</header> 
+
+
+    <script src="../javascript/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+* {
+	padding: 0;
+  margin: 0;
+}
+
+
+body {
+  background-color: gainsboro;
+}
+
+header {
+  width:1440px;
+  min-width: 80%;
+  margin: 20px auto;
+  padding:10px;
+  background-color: white;
+  }
+
+
+.onlyTheName {
+  margin-top: 60px;
+  margin-left: 140px;
+  max-width: 600px;
+  float: left;
+  font-size: 34px;
+  font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+.direction {
+  max-width: 815px;
+  padding-left: 255px;
+  padding-top: 155px;
+  font-size: 32px;
+  line-height: 50px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+label {
+  padding: 5px 10px;
+}
+
+input:checked + .radio_label{
+  color:#FF5F49;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
+.menu-main {
+  list-style: none;
+  margin-top: 70px;
+  padding: 0px 0 15px;
+  text-align: right;
+  background: white; 
+}
+
+.menu-main li{
+  list-style:none;
+  display:inline-block;
+  position:relative;
+}
+
+.menu-main a:hover{
+  color: orangered;
+}
+
+.menu-main a{
+  padding:5px 7px;
+  text-decoration:none;
+  transition: .3s;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 5px;
+  margin: 0 34px 10px 30px;
+  font-size: 18px;
+  text-transform: uppercase;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.slider{
+  max-width: 90%;
+  position: relative;
+  margin: auto;
+  height: 300px;
+  margin-bottom: 15px;
+}
+
+/* Кнопки вперед и назад */
+.slider .prev, .slider .next {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;  
+  font-size: 58px;
+}
+.slider .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* При наведении на кнопки изменяем цвет кнопок */
+.slider .prev:hover,
+.slider .next:hover {
+  color: rgba(70, 99, 230, 0.863);
+
+}
+/* Заголовок слайда */
+.slideText {
+  position: absolute;
+  color: #fff;
+  font-size: 35px;
+  /* Выравнивание текста по горизонтали и по вертикали*/
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  /* Тень*/
+  text-shadow: 1px 1px 1px #000, 0 0 1em #000;
+}
+
+
+/* Анимация слайдов */
+.slider .item {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {
+      opacity: .4
+  }
+  to {
+      opacity: 1
+  }
+}
+@keyframes fade {
+  from {
+      opacity: .4
+  }
+  to {
+      opacity: 1
+  }
+}
+
+
+
